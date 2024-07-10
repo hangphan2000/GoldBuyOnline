@@ -1,0 +1,69 @@
+let inputElement;
+let timer = setInterval(function() {
+  inputElement = document.getElementById('input-25');
+  if (inputElement) {
+    inputElement.click();
+    
+    document.querySelector('.v-list-item__content').click();
+    
+    let button;
+let timer1 = setInterval(function(){
+  button = document.querySelector('button[type="button"][step="3"].btn-main.next-step');
+  if(button){
+    button.click();
+    
+    clearInterval(timer1);
+  }
+  
+},100);
+
+
+// Function to trigger an event on an element
+function triggerEvent(el, type) {
+  const event = new Event(type, { bubbles: true });
+  el.dispatchEvent(event);
+}
+
+// Use setInterval to check for the input-101 element
+var timer = setInterval(function() {
+  // Select the input element by its ID
+  var input101 = document.getElementById('input-101');
+
+  // Check if the input-101 element was found
+  if (input101) {
+    // Focus on the input field
+    input101.focus();
+
+    // Set the value of the input field to '16/03/1963'
+    input101.value = '16/03/1963';
+
+    // Trigger the 'input' event to notify the browser of the value change
+    triggerEvent(input101, 'input');
+
+    // Trigger the 'change' event to notify the browser of the value change
+    triggerEvent(input101, 'change');
+    
+    var input119 = document.getElementById('input-119');
+    
+    //ngay cap
+    input119.focus();
+    input119.value = '19/11/2021';
+    triggerEvent(input119, 'input');
+    triggerEvent(input119, 'change');
+    
+    //checkbox
+    const checkbox = document.querySelector('input[type=checkbox]');
+    if (checkbox) {
+        checkbox.checked = true;
+        triggerEvent(checkbox, 'change');
+    }
+    
+    // Stop the interval
+    clearInterval(timer);
+  }
+}, 100);
+    //end
+    clearInterval(timer);
+  }
+}, 100);
+
