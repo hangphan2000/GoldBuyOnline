@@ -1,0 +1,23 @@
+
+// ngay sinh
+document.querySelector('input.bB.cN[name="ns"]').value='28-10-1992';
+// ngay cap
+document.querySelector('input.bB.cN[name="nc"]').value = '25-08-2021';
+// chon loai can cuoc
+document.querySelector('select[name="l"]').selectedIndex = 1;
+// chon gt
+document.querySelector('select[name="gt"]').selectedIndex = 2;
+// chon noi gd
+document.querySelector('select[name="dc"]').selectedIndex = 1;
+// focus vao o viet capcha
+document.querySelector('input.bB[name="mxn"]').focus();
+// Cuộn xuống cuối trang
+window.scrollTo(0, document.body.scrollHeight);
+
+//enable button dang ky
+var timer = setInterval(function() {
+  var button = document.querySelector('.pa-btn.gh');
+  if (button && button.disabled) {
+    button.disabled = false;
+  }
+}, 1000);
