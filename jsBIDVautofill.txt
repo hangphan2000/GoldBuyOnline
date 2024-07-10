@@ -1,0 +1,30 @@
+function triggerEvent(el, type) {
+    const event = new Event(type, { bubbles: true });
+    el.dispatchEvent(event);
+}
+//click dong y co tai khoan
+document.getElementById('btnYes').click();
+//branch dia diem giao dich
+var branch= document.getElementById("branch");
+branch.selectedIndex = 2;
+triggerEvent(branch, 'change');
+
+// capital
+var capital= document.getElementById("capital");
+capital.selectedIndex = 1;
+triggerEvent(capital, 'change');
+// purpose
+var purpose= document.getElementById("purpose");
+purpose.selectedIndex = 1;
+triggerEvent(purpose, 'change');
+//check dong y
+let customCheckbox = document.querySelector('.iCheck-helper').click();
+
+// Lấy đối tượng checkbox
+var check = document.getElementById("terms");
+
+// Thiết lập checked
+check.checked = true;
+
+// Kích hoạt sự kiện "input" cho checkbox
+triggerEvent(check, 'input');
