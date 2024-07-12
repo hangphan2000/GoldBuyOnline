@@ -7,7 +7,7 @@ Vu.duyhai63@proton.me //Vuduyhai63@
 19/11/2021
 Tổ 8 Minh Khai, Phủ Lý, hà nam
 
---------------Hà Thị Túc
+--------------Hà Thị Túc //done
 Hà Thị Túc
 22/01/1970
 Ha.thituc70@proton.me //Hathituc70@
@@ -17,7 +17,7 @@ bidv:8842804799
 25/04/2021
 Tổ 7 Hai Bà Trưng, Phủ Lý, hà nam
 
---------------Trần Văn Kỳ
+--------------Trần Văn Kỳ //done
 Trần Văn Kỳ
 12/08/1972
 tran.vanky72hn@gmail.com //Trinhvanky72@
@@ -26,7 +26,7 @@ tran.vanky72hn@gmail.com //Trinhvanky72@
 19/11/2021
 Lê Lợi, Châu sơn, Phủ Lý, Hà Nam
 
---------------Nguyễn Hữu Giang
+--------------Nguyễn Hữu Giang //done
 Nguyễn Hữu Giang
 24/11/1994
 nguyen.huugiang94@proton.me //Nguyenhuugiang94@
@@ -55,3 +55,13 @@ bidv:8852851775
 001179044532
 10/07/2021
 Phong Triều, nam Triều, Phú xuyên, Hà nội
+
+--------------Cao Hiếu Ngân
+Cao Hiếu Ngân
+06/12/2001
+email //
+0914837055
+bidv:8882851002
+035301004712
+15/01/2022
+Tổ 8 Trần Hưng Đạo, Phủ Lý, hà nam
