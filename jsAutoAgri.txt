@@ -8,7 +8,7 @@ const phone = '0972996973'; const t4= 200;
 const cmnd= '035063010610'; const t5= 2500;
 const noicap= 'cục cảnh sát qlhc về ttxh'; const t6= 3000;
 const ngaycap= '19/11/2021'; const t7= 3500;
-const tcheckbox = 4000
+const tcheckbox = 4000;
 //---------------------------------------
 function triggerEvent(el, type) {
   const event = new Event(type, { bubbles: true });
