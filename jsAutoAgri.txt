@@ -1,5 +1,15 @@
 nhớ thêm dòng email vu.duyhai63@proton.me
 ---------------------------phan 1
+// sửa thông tin tại đây
+const name = 'Vũ Duy Hải'; const t1= 500;
+const birthday = '16/03/1963'; const t2= 1000;
+const adress = 'Tổ 8 Minh Khai, Phủ Lý, hà nam'; const t3= 1500;
+const phone = '0972996973'; const t4= 200;
+const cmnd= '035063010610'; const t5= 2500;
+const noicap= 'cục cảnh sát qlhc về ttxh'; const t6= 3000;
+const ngaycap= '19/11/2021'; const t7= 3500;
+const tcheckbox = 4000
+//---------------------------------------
 function triggerEvent(el, type) {
   const event = new Event(type, { bubbles: true });
   el.dispatchEvent(event);
@@ -12,62 +22,62 @@ var timer = setInterval(function() {
     setTimeout(function(){
       const input96= document.getElementById('input-96');
       if (input96) {
-          input96.value = 'Vũ Duy Hải';
+          input96.value = name;
           triggerEvent(input96, 'input');
       }
-      },500);
+      },t1);
     //ngay sinh
     setTimeout(function(){
       input101.focus();
-      input101.value = '16/03/1963';
+      input101.value = birthday;
       triggerEvent(input101, 'input');
       triggerEvent(input101, 'change');
-    },1000);      
+    },t2);      
     //adress
     setTimeout(function(){
       const input105= document.getElementById('input-105');
       if (input105) {
-          input105.value = 'Tổ 8 Minh Khai, Phủ Lý, hà nam';
+          input105.value = adress;
           triggerEvent(input105, 'input');
       }
-      },1500); 
+      },t3); 
       
     //phone
     setTimeout(function(){
       const input111= document.getElementById('input-111');
       if (input111) {
-          input111.value = '0972996973';
+          input111.value = phone;
           triggerEvent(input111, 'input');
       }
-      },2000); 
+      },t4); 
       
     //cmnd
     setTimeout(function(){
       const input114= document.getElementById('input-114');
       if (input114) {
-          input114.value = '035063010610';
+          input114.value = cmnd;
           triggerEvent(input114, 'input');
       }
-      },2500);  
+      },t5);  
 
     //noi cap
     setTimeout(function(){
       const input123= document.getElementById('input-123');
       if (input123) {
-          input123.value = 'cục cảnh sát qlhc về ttxh';
+          input123.value = noicap;
           triggerEvent(input123, 'input');
       }
-      },3000);       
+      },t6);       
 
 
     //ngay cap
     setTimeout(function(){
       var input119 = document.getElementById('input-119');
       input119.focus();
-      input119.value = '19/11/2021';
+      input119.value = ngaycap;
       triggerEvent(input119, 'input');
       triggerEvent(input119, 'change');
-    }, 3500);
+    }, t7);
     //checkbox
     setTimeout(function(){
         const checkbox = document.querySelector('input[type=checkbox]');
@@ -75,13 +85,12 @@ var timer = setInterval(function() {
             checkbox.checked = true;
             triggerEvent(checkbox, 'change');
         }
-      },4000);
+      },tcheckbox);
     
     // Stop the interval
     clearInterval(timer);
   }
 }, 100);
-
 ---------------------------phan 2
 let inputElement;
 let timer = setInterval(function() {
