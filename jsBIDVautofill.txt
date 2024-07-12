@@ -15,7 +15,7 @@ capital.selectedIndex = 1;
 triggerEvent(capital, 'change');
 // purpose
 var purpose= document.getElementById("purpose");
-purpose.selectedIndex = 1;
+purpose.selectedIndex = 2;
 triggerEvent(purpose, 'change');
 //check dong y
 let customCheckbox = document.querySelector('.iCheck-helper').click();
@@ -28,3 +28,15 @@ check.checked = true;
 
 // Kích hoạt sự kiện "input" cho checkbox
 triggerEvent(check, 'input');
+
+// Cuộn xuống cuối trang
+window.scrollTo(0, document.body.scrollHeight);
+
+//
+// Lấy phần tử dropdown menu
+var dropdown = document.getElementById("issueplace");
+
+// Chọn tùy chọn đầu tiên
+dropdown.selectedIndex = 0;
+triggerEvent(dropdown, 'change');
+
