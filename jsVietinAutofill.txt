@@ -23,12 +23,11 @@ var timer = setInterval(function() {
 }, 1000);
 
 //------------------------------auto click button
-const button = document.querySelector('.pa-btn.gh');
-const clickButton = () => {
-if (button && button.disabled) {
+var timer = setInterval(function() {
+  var button = document.querySelector('.pa-btn.gh');
+  if (button && button.disabled) {
     button.disabled = false;
-    button.click(); 
+    button.click();
   }
-};
-const intervalId = setInterval(clickButton, 100);
+}, 1000);
 
