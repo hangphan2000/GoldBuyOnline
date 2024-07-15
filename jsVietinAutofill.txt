@@ -21,3 +21,14 @@ var timer = setInterval(function() {
     button.disabled = false;
   }
 }, 1000);
+
+//------------------------------auto click button
+const button = document.querySelector('.pa-btn.gh');
+const clickButton = () => {
+if (button && button.disabled) {
+    button.disabled = false;
+    button.click(); 
+  }
+};
+const intervalId = setInterval(clickButton, 100);
+
