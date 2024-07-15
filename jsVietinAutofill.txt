@@ -22,12 +22,12 @@ var timer = setInterval(function() {
   }
 }, 1000);
 
-//------------------------------auto click button
-var timer = setInterval(function() {
-  var button = document.querySelector('.pa-btn.gh');
-  if (button && button.disabled) {
-    button.disabled = false;
+//------------------------------auto click button: copy to console trước đó nhớ allow pasting
+var button = document.querySelector('.pa-btn.gh');
+setInterval(function() {
+    if(button.disabled){
+        button.disabled = false;
+    };
     button.click();
-  }
-}, 1000);
+},1000);
 
