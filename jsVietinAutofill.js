@@ -36,15 +36,23 @@ for (let i = 0; i < 20; i++) {
 //---------------------------------------test
 //enable button dang ky
 var timer = setInterval(function() {
-  var button = document.querySelector('.pa-btn.gh');
-  var mxn = document.querySelector('input.bB[name="mxn"]');
-  var counter = 0;
-  if (button && button.disabled && mxn.length === 5) {
-    button.disabled = false;
+    console.log('running');
+  var button = document.querySelector('.pa-btn.gh'); // Nút xác nhận
+  var mxn = document.querySelector('input.bB[name="mxn"]'); // Trường nhập captcha
+  var inputEmailCode = document.querySelector('input[name="dh"]'); // Trường nhập mã email
+  var thongBao = document.querySelector('.tB').innerText;//thong bao
+  if (mxn.value.length === 5) {
+    if (button.disabled) {
+      console.log('button disabled');
+      button.disabled = false;
+    }
     button.click();
-    counter++;
-    document.title = counter;
   }
-}, 1000);
+  if (!inputEmailCode.disabled) {
+    console.log('email input found!');
+    document.title = 'Email';
+    clearInterval(timer);
+  }
+}, 100);
 
 
