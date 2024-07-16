@@ -14,13 +14,6 @@ document.querySelector('input.bB[name="mxn"]').focus();
 // Cuộn xuống cuối trang
 window.scrollTo(0, document.body.scrollHeight);
 
-//enable button dang ky
-var timer = setInterval(function() {
-  var button = document.querySelector('.pa-btn.gh');
-  if (button && button.disabled) {
-    button.disabled = false;
-  }
-}, 1000);
 
 //------------------------------auto click button: copy to console trước đó nhớ allow pasting
 var button = document.querySelector('.pa-btn.gh');
