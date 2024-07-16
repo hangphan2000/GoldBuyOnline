@@ -27,4 +27,24 @@ setInterval(function() {
     document.title = counter;
 }, 100);
 
+//----------------------open tabs
+// Open 20 tabs with the same URL
+for (let i = 0; i < 20; i++) {
+  window.open('https://dangkymuavang.vietinbankgold.vn/');
+}
+
+//---------------------------------------test
+//enable button dang ky
+var timer = setInterval(function() {
+  var button = document.querySelector('.pa-btn.gh');
+  var mxn = document.querySelector('input.bB[name="mxn"]');
+  var counter = 0;
+  if (button && button.disabled && mxn.length === 5) {
+    button.disabled = false;
+    button.click();
+    counter++;
+    document.title = counter;
+  }
+}, 1000);
+
 
