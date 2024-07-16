@@ -7,7 +7,7 @@ const acctnum= '8802851100'
 const cellphone= '0969609494'
 const idnumber= '001096023632'
 const issuedate= '08/12/2021'
-const birthday= '24/1/1996'
+const birthday= '24/01/1996'
 const amount= 1 // số lượng cây
 //------------
 function triggerEvent(el, type) {
