@@ -1,4 +1,4 @@
-//-------------------------------------------------Phần 1
+#Phần 1
 //sửa thông tin ở đây
 const fullname = 'Mai Văn Tùng'
 const address2= 'đồng tân, tân sơn, kim bảng, hà nam'
