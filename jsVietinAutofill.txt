@@ -24,10 +24,14 @@ var timer = setInterval(function() {
 
 //------------------------------auto click button: copy to console trước đó nhớ allow pasting
 var button = document.querySelector('.pa-btn.gh');
+var counter = 0;
 setInterval(function() {
-    if(button.disabled){
+    if (button.disabled) {
         button.disabled = false;
-    };
+    }
     button.click();
-},1000);
+    counter++;
+    document.title = counter;
+}, 100);
+
 
