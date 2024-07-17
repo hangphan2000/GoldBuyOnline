@@ -96,6 +96,7 @@ triggerEvent(dropdown, 'change');
 
 //-------------------------------------Phần 3
 var timer = setInterval(function() {
+    console.log('click button is running...');
     var captchaInput = document.getElementById('captcha'); //captcha 6 so
     var otpcodeInput = document.getElementById('otpcode'); //otp 6 so
     var btnOne = document.querySelector('.btn.btn-blue.next-step.btn-block');//button xac nhan trang 1
