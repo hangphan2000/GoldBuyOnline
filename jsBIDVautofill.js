@@ -94,3 +94,20 @@ var dropdown = document.getElementById("issueplace");
 dropdown.selectedIndex = 0;
 triggerEvent(dropdown, 'change');
 
+//-------------------------------------Phần 3
+var timer = setInterval(function() {
+    var captchaInput = document.getElementById('captcha'); //captcha 6 so
+    var otpcodeInput = document.getElementById('otpcode'); //otp 6 so
+    var btnOne = document.querySelector('.btn.btn-blue.next-step.btn-block');//button xac nhan trang 1
+    var btnTwo = document.querySelector('.btn.btn-blue.finish-step.btn-block');//button xac nhan trang 2
+    if(captchaInput.value.length === 6){
+        btnOne.click();
+        captchaInput.value = '';
+        triggerEvent(captchaInput,'input');
+    }
+    if(otpcodeInput.value.length === 6){
+         btnTwo.click();
+        otpcodeInput.value = '';
+        triggerEvent(otpcodeInput,'input');
+    }
+},100);
