@@ -62,7 +62,6 @@ document.getElementById('btnYes').click();
 var branch= document.getElementById("branch");
 branch.selectedIndex = 2;
 triggerEvent(branch, 'change');
-
 // capital
 var capital= document.getElementById("capital");
 capital.selectedIndex = 1;
@@ -71,28 +70,18 @@ triggerEvent(capital, 'change');
 var purpose= document.getElementById("purpose");
 purpose.selectedIndex = 2;
 triggerEvent(purpose, 'change');
-//check dong y
-let customCheckbox = document.querySelector('.iCheck-helper').click();
-
-// Lấy đối tượng checkbox
-var check = document.getElementById("terms");
-
-// Thiết lập checked
-check.checked = true;
-
-// Kích hoạt sự kiện "input" cho checkbox
-triggerEvent(check, 'input');
-
-// Cuộn xuống cuối trang
-window.scrollTo(0, document.body.scrollHeight);
-
-//
-// Lấy phần tử dropdown menu
+//issueplace
 var dropdown = document.getElementById("issueplace");
-
-// Chọn tùy chọn đầu tiên
 dropdown.selectedIndex = 0;
 triggerEvent(dropdown, 'change');
+//check dong y
+let customCheckbox = document.querySelector('.iCheck-helper').click();
+// checkbox
+var check = document.getElementById("terms");
+check.checked = true;
+triggerEvent(check, 'input');
+
+window.scrollTo(0, document.body.scrollHeight);// Cuộn xuống cuối trang
 
 //-------------------------------------Phần 3
 var timer = setInterval(function() {
