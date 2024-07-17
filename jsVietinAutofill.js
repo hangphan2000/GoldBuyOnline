@@ -14,6 +14,13 @@ document.querySelector('input.bB[name="mxn"]').focus();
 // Cuộn xuống cuối trang
 window.scrollTo(0, document.body.scrollHeight);
 
+//------------------------------mai anh
+var button = document.querySelector('.pa-btn.gh');
+setInterval(function() {
+    if (button.disabled) {
+        button.disabled = false;
+    }
+}, 100);
 
 //------------------------------auto click button: copy to console trước đó nhớ allow pasting
 var button = document.querySelector('.pa-btn.gh');
