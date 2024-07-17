@@ -47,24 +47,28 @@ for (let i = 0; i < 20; i++) {
 //---------------------------------------test
 //enable button dang ky
 var timer = setInterval(function() {
-    console.log('running');
+    let now = new Date();
+    console.log('running... ' + now.getHours() + ':' +now.getMinutes());
   var button = document.querySelector('.pa-btn.gh'); // Nút xác nhận xac nhap trang 1
     var button2 = document.querySelector('.pa-btn.dh'); // Nút xác nhận trang 2
   var mxn = document.querySelector('input.bB[name="mxn"]'); // Trường nhập captcha
   var inputEmailCode = document.querySelector('input[name="dh"]'); // Trường nhập mã email
   var thongBao = document.querySelector('.tB').innerText;//thong bao
-  if (mxn.value.length === 5) {
-    if (button.disabled) {
-      console.log('button disabled');
-      button.disabled = false;
+    if(now.getHours()===11 && now.getMinutes()<11){
+      if (mxn.value.length === 5) {
+            if (button.disabled || button2.disabled) {
+              button.disabled = false;
+              button2.disabled = false;
+            }
+            button.click();
+      }
+        if (!inputEmailCode.disabled) {
+        console.log('email input found!');
+        document.title = 'Email';
+        clearInterval(timer);
+        }
     }
-    button.click();
-  }
-  if (!inputEmailCode.disabled) {
-    console.log('email input found!');
-    document.title = 'Email';
-    clearInterval(timer);
-  }
+
 }, 100);
 
 
