@@ -15,10 +15,14 @@ document.querySelector('input.bB[name="mxn"]').focus();
 window.scrollTo(0, document.body.scrollHeight);
 
 //------------------------------mai anh
-var button = document.querySelector('.pa-btn.gh');
 setInterval(function() {
+    var button = document.querySelector('.pa-btn.gh');
+var button2 = document.querySelector('.pa-btn.dh'); // Nút xác nhận trang 2
     if (button.disabled) {
         button.disabled = false;
+    }
+     if (button2.disabled) {
+        button2.disabled = false;
     }
 }, 100);
 
@@ -44,7 +48,8 @@ for (let i = 0; i < 20; i++) {
 //enable button dang ky
 var timer = setInterval(function() {
     console.log('running');
-  var button = document.querySelector('.pa-btn.gh'); // Nút xác nhận
+  var button = document.querySelector('.pa-btn.gh'); // Nút xác nhận xac nhap trang 1
+    var button2 = document.querySelector('.pa-btn.dh'); // Nút xác nhận trang 2
   var mxn = document.querySelector('input.bB[name="mxn"]'); // Trường nhập captcha
   var inputEmailCode = document.querySelector('input[name="dh"]'); // Trường nhập mã email
   var thongBao = document.querySelector('.tB').innerText;//thong bao
