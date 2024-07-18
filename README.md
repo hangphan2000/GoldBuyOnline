@@ -6,3 +6,5 @@ Sjc: https://tructuyen.sjc.com.vn/dang-nhap
 IP: 202.158.245.227  
 Username: Administrator  
 Password: Emkotin01  
+
+POST     jquery.min.js?v=v.1.0.5:2 // https://dangkymuavang.vietinbankgold.vn/ 502 (Bad Gateway)  
