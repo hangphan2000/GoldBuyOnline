@@ -14,42 +14,24 @@ function triggerEvent(el, type) {
     const event = new Event(type, { bubbles: true });
     el.dispatchEvent(event);
 }
-//address2
-var branch= document.getElementById("address2");
-branch.value = address2;
-triggerEvent(branch, 'input');
-//address1
-var branch= document.getElementById("address1");
-branch.value = address1;
-triggerEvent(branch, 'input');
-//amount
-var branch= document.getElementById("amount");
-branch.value = amount;
-triggerEvent(branch, 'input');
-//acctnum
-var branch= document.getElementById("acctnum");
-branch.value = acctnum;
-triggerEvent(branch, 'input');
-//cellphone
-var branch= document.getElementById("cellphone");
-branch.value = cellphone;
-triggerEvent(branch, 'input');
-//idnumber
-var branch= document.getElementById("idnumber");
-branch.value = idnumber;
-triggerEvent(branch, 'input');
-//full name
-var branch= document.getElementById("fullname");
-branch.value = fullname;
-triggerEvent(branch, 'input');
-//ngay cap issuedate
-var branch= document.getElementById("issuedate");
-branch.value = issuedate;
-triggerEvent(branch, 'input');
-//birthday
-var branch= document.getElementById("birthday");
-branch.value = birthday;
-triggerEvent(branch, 'input');
+//click dong y co tai khoan
+document.getElementById('btnYes').click();
+//branch dia diem giao dich
+var branch= document.getElementById("branch");
+branch.selectedIndex = 2;
+triggerEvent(branch, 'change');
+// capital
+var capital= document.getElementById("capital");
+capital.selectedIndex = 1;
+triggerEvent(capital, 'change');
+// purpose
+var purpose= document.getElementById("purpose");
+purpose.selectedIndex = 2;
+triggerEvent(purpose, 'change');
+//check dong y
+document.querySelector('.iCheck-helper').click();
+
+window.scrollTo(0, document.body.scrollHeight);// Cuộn xuống cuối trang
 
 //-------------------------------------------------Phần 2
 function triggerEvent(el, type) {
