@@ -1,20 +1,22 @@
-#Phần 1
+//------------------------------------------------- phan 1
 //sửa thông tin ở đây
-const fullname = 'Mai văn cường'
-const address2= '368-C7 tân mai, hoàng mai, hà nội'
-const address1= '368-C7 tân mai, hoàng mai, hà nội'
-const acctnum= '8832713711'
-const cellphone= '0965711999'
-const idnumber= '035075000001'
-const issuedate= '10/07/2021'
-const birthday= '20/12/1975'
+const fullname = 'Mai Văn Tùng'
+const address2= 'đồng tân, tân sơn, kim bảng, hà nam'
+const address1= 'đồng tân, tân sơn, kim bảng, hà nam'
+const acctnum= '4823373892'
+const cellphone= '0949355950'
+const idnumber= '035203003891'
+const issuedate= '31/12/2021'
+const birthday= '30/01/2003'
 const amount= 1 // số lượng cây
 //------------
 function triggerEvent(el, type) {
     const event = new Event(type, { bubbles: true });
     el.dispatchEvent(event);
 }
-//address2
+setTimeout(function(){
+  console.log('run1');
+  //address2
 var branch= document.getElementById("address2");
 branch.value = address2;
 triggerEvent(branch, 'input');
@@ -50,13 +52,12 @@ triggerEvent(branch, 'input');
 var branch= document.getElementById("birthday");
 branch.value = birthday;
 triggerEvent(branch, 'input');
+  
+},100)
 
-//-------------------------------------------------Phần 2
-function triggerEvent(el, type) {
-    const event = new Event(type, { bubbles: true });
-    el.dispatchEvent(event);
-}
-//click dong y co tai khoan
+setTimeout(function(){
+  console.log('run2');
+  //click dong y co tai khoan
 document.getElementById('btnYes').click();
 //branch dia diem giao dich
 var branch= document.getElementById("branch");
@@ -70,12 +71,21 @@ triggerEvent(capital, 'change');
 var purpose= document.getElementById("purpose");
 purpose.selectedIndex = 2;
 triggerEvent(purpose, 'change');
+//issueplace
+var dropdown = document.getElementById("issueplace");
+dropdown.selectedIndex = 0;
+triggerEvent(dropdown, 'change');
 //check dong y
-document.querySelector('.iCheck-helper').click();
+let customCheckbox = document.querySelector('.iCheck-helper').click();
+// checkbox
+var check = document.getElementById("terms");
+check.checked = true;
+triggerEvent(check, 'input');
 
 window.scrollTo(0, document.body.scrollHeight);// Cuộn xuống cuối trang
+},100)
 
-//-------------------------------------Phần 3
+//-------------------------------------Phần 2 chua dung duoc
 var timer = setInterval(function() {
     console.log('click button is running...');
     var captchaInput = document.getElementById('captcha'); //captcha 6 so
