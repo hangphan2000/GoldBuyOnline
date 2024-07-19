@@ -1,1 +1,95 @@
+//-------------------------------------------------Phần 1
+//sửa thông tin ở đây
+const fullname = 'Nguyễn Thị Nga'
+const address2= 'Phong Triều, Nam Triều, Phú xuyên, Hà Nội'
+const address1= 'Phong Triều, Nam Triều, Phú xuyên, Hà Nội'
+const acctnum= '8852851775'
+const cellphone= '0356515683'
+const idnumber= '001179044532'
+const issuedate= '10/07/2021'
+const birthday= '16/11/1979'
+const amount= 1 // số lượng cây
+//------------
+function triggerEvent(el, type) {
+    const event = new Event(type, { bubbles: true });
+    el.dispatchEvent(event);
+}
+//address2
+var branch= document.getElementById("address2");
+branch.value = address2;
+triggerEvent(branch, 'input');
+//address1
+var branch= document.getElementById("address1");
+branch.value = address1;
+triggerEvent(branch, 'input');
+//amount
+var branch= document.getElementById("amount");
+branch.value = amount;
+triggerEvent(branch, 'input');
+//acctnum
+var branch= document.getElementById("acctnum");
+branch.value = acctnum;
+triggerEvent(branch, 'input');
+//cellphone
+var branch= document.getElementById("cellphone");
+branch.value = cellphone;
+triggerEvent(branch, 'input');
+//idnumber
+var branch= document.getElementById("idnumber");
+branch.value = idnumber;
+triggerEvent(branch, 'input');
+//full name
+var branch= document.getElementById("fullname");
+branch.value = fullname;
+triggerEvent(branch, 'input');
+//ngay cap issuedate
+var branch= document.getElementById("issuedate");
+branch.value = issuedate;
+triggerEvent(branch, 'input');
+//birthday
+var branch= document.getElementById("birthday");
+branch.value = birthday;
+triggerEvent(branch, 'input');
 
+//-------------------------------------------------Phần 2
+function triggerEvent(el, type) {
+    const event = new Event(type, { bubbles: true });
+    el.dispatchEvent(event);
+}
+//click dong y co tai khoan
+document.getElementById('btnYes').click();
+//branch dia diem giao dich
+var branch= document.getElementById("branch");
+branch.selectedIndex = 2;
+triggerEvent(branch, 'change');
+
+// capital
+var capital= document.getElementById("capital");
+capital.selectedIndex = 1;
+triggerEvent(capital, 'change');
+// purpose
+var purpose= document.getElementById("purpose");
+purpose.selectedIndex = 2;
+triggerEvent(purpose, 'change');
+//check dong y
+let customCheckbox = document.querySelector('.iCheck-helper').click();
+
+// Lấy đối tượng checkbox
+var check = document.getElementById("terms");
+
+// Thiết lập checked
+check.checked = true;
+
+// Kích hoạt sự kiện "input" cho checkbox
+triggerEvent(check, 'input');
+
+// Cuộn xuống cuối trang
+window.scrollTo(0, document.body.scrollHeight);
+
+//
+// Lấy phần tử dropdown menu
+var dropdown = document.getElementById("issueplace");
+
+// Chọn tùy chọn đầu tiên
+dropdown.selectedIndex = 0;
+triggerEvent(dropdown, 'change');
