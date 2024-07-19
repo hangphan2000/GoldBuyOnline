@@ -1,13 +1,13 @@
 //-------------------------------------------------Phần 1
 //sửa thông tin ở đây
-const fullname = 'Nguyễn Thị Nga'
-const address2= 'Phong Triều, Nam Triều, Phú xuyên, Hà Nội'
-const address1= 'Phong Triều, Nam Triều, Phú xuyên, Hà Nội'
-const acctnum= '8852851775'
-const cellphone= '0356515683'
+const fullname = 'Cao Hiếu Ngân'
+const address2= 'Tổ 6, Trần Hưng Đạo, Phủ Lý, Hà Nam'
+const address1= 'Tổ 6, Trần Hưng Đạo, Phủ Lý, Hà Nam'
+const acctnum= '8882851002'
+const cellphone= '0914837055'
 const idnumber= '001179044532'
-const issuedate= '10/07/2021'
-const birthday= '16/11/1979'
+const issuedate= '15/01/2022'
+const birthday= '06/12/2001'
 const amount= 1 // số lượng cây
 //------------
 function triggerEvent(el, type) {
