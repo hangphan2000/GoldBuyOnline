@@ -69,6 +69,6 @@ var timer = setInterval(function() {
         }
     }
 
-}, 100);
+}, 1);
 
 
