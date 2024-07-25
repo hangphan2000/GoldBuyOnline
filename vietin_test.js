@@ -35,6 +35,7 @@ var timer = setInterval(function() {
   var button = document.querySelector('.pa-btn.gh'); // Nút xác nhận xac nhap trang 1
   var mxn = document.querySelector('input.bB[name="mxn"]'); // Trường nhập captcha
   var thongBao = document.querySelector('.tB').innerText;//thong bao
+   var inputEmailCode = document.querySelector('input[name="dh"]'); // Trường nhập mã email
     if(now.getHours()===11){
       if (mxn.value.length === 5) {
             if (button.disabled) {
