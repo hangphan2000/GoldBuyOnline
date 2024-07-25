@@ -77,3 +77,20 @@ var timer = setInterval(function() {
   document.querySelector('input.bB.hT[name="ht"]').value = 'mai.vantung03@proton.me'
   // ngay cap
   document.querySelector('input.bB.cN[name="nc"]').value = '31/12/2021';
+//nhung
+  //ho ten
+  document.querySelector('input.bB[name="hvt"]').value = 'Tô thị trang nhung'
+  //id number
+  document.querySelector('input.bB[name="s"]').value = '001179034852'
+  //noi cap
+  document.querySelector('input.bB[name="dcc"]').value = 'cục cảnh sát qlhc về ttxh'
+  //adress
+  document.querySelector('input.bB[name="dctt"]').value = '368-C7 tân mai, hoàng mai, hà nội'
+  //phone
+  document.querySelector('input.bB[name="sdt"]').value = '0983252568'
+  // ngay sinh
+  document.querySelector('input.bB[name="ns"]').value='02/09/1979';
+  //email
+  document.querySelector('input.bB.hT[name="ht"]').value = 'nhungtt.vic@gmail.com'
+  // ngay cap
+  document.querySelector('input.bB.cN[name="nc"]').value = '04/12/2021';
