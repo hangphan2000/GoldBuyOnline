@@ -60,3 +60,20 @@ var timer = setInterval(function() {
         }
     }
 }, 1);
+//tung
+ //ho ten
+  document.querySelector('input.bB[name="hvt"]').value = 'Mai Văn Tùng'
+  //id number
+  document.querySelector('input.bB[name="s"]').value = '035203003891'
+  //noi cap
+  document.querySelector('input.bB[name="dcc"]').value = 'cục cảnh sát qlhc về ttxh'
+  //adress
+  document.querySelector('input.bB[name="dctt"]').value = 'đồng tân, tân sơn, kim bảng, hà nam'
+  //phone
+  document.querySelector('input.bB[name="sdt"]').value = '0949355950'
+  // ngay sinh
+  document.querySelector('input.bB[name="ns"]').value='28-10-1992';
+  //email
+  document.querySelector('input.bB.hT[name="ht"]').value = 'mai.vantung03@proton.me'
+  // ngay cap
+  document.querySelector('input.bB.cN[name="nc"]').value = '31/12/2021';
