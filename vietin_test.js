@@ -11,7 +11,14 @@ let person = {
   vietinSexIndex: 2,
   vietinLoaiCC: 1,
   vietinNoiGiaoDich: 1,
+  bidvAccNum: 4821813240, //tài khoản bid
+  bidvAmount: 1,
+  bidvBranch: 1, //dia điểm giao dịch
+  bidvCapital: 1,
+  bidvPurpose: 2,
+  bidvIssuePlace: 0,
 }
+
 setTimeout(function() {
   document.querySelector('input.bB[name="hvt"]').value = person.fullName //ho ten
   document.querySelector('input.bB[name="s"]').value = person.idNumber //id number
@@ -26,7 +33,9 @@ setTimeout(function() {
   document.querySelector('select[name="dc"]').selectedIndex = person.vietinNoiGiaoDich; // chon noi gd
   document.querySelector('input.bB[name="mxn"]').focus(); // focus vao o viet capcha
   window.scrollTo(0, document.body.scrollHeight);  // Cuộn xuống cuối trang
+  console.log('fill info scueess');
 },100);
+
 //enable button dang ky
 let button;
 let mxn;
@@ -34,18 +43,18 @@ let thongBao;
 let inputEmailCode;
 let now;
 var timer = setInterval(function() {
-    now = new Date();
-    console.log('clicking find email');
+  now = new Date();
   button = document.querySelector('.pa-btn.gh'); // Nút xác nhận xac nhap trang 1
   mxn = document.querySelector('input.bB[name="mxn"]'); // Trường nhập captcha
   thongBao = document.querySelector('.tB').innerText;//thong bao
-   inputEmailCode = document.querySelector('input[name="dh"]'); // Trường nhập mã email
+  inputEmailCode = document.querySelector('input[name="dh"]'); // Trường nhập mã email
     if(now.getHours()===11){
       if (mxn.value.length === 5) {
             if (button.disabled) {
               button.disabled = false;
             }
             button.click();
+          console.log('button trang 1 clicking');
       }
         if (!inputEmailCode.disabled) {
         console.log('email input found!');
@@ -60,42 +69,9 @@ var timer = setInterval(function() {
               button.disabled = false;
             }
             button.click();
+            console.log('button trang 2 clicking');
             }
         },1);
         }
     }
 }, 1);
-//tung
- //ho ten
-  document.querySelector('input.bB[name="hvt"]').value = 'Mai Văn Tùng'
-  //id number
-  document.querySelector('input.bB[name="s"]').value = '035203003891'
-  //noi cap
-  document.querySelector('input.bB[name="dcc"]').value = 'cục cảnh sát qlhc về ttxh'
-  //adress
-  document.querySelector('input.bB[name="dctt"]').value = 'đồng tân, tân sơn, kim bảng, hà nam'
-  //phone
-  document.querySelector('input.bB[name="sdt"]').value = '0949355950'
-  // ngay sinh
-  document.querySelector('input.bB[name="ns"]').value='28-10-1992';
-  //email
-  document.querySelector('input.bB.hT[name="ht"]').value = 'mai.vantung03@proton.me'
-  // ngay cap
-  document.querySelector('input.bB.cN[name="nc"]').value = '31/12/2021';
-//nhung
-  //ho ten
-  document.querySelector('input.bB[name="hvt"]').value = 'Tô thị trang nhung'
-  //id number
-  document.querySelector('input.bB[name="s"]').value = '001179034852'
-  //noi cap
-  document.querySelector('input.bB[name="dcc"]').value = 'cục cảnh sát qlhc về ttxh'
-  //adress
-  document.querySelector('input.bB[name="dctt"]').value = '368-C7 tân mai, hoàng mai, hà nội'
-  //phone
-  document.querySelector('input.bB[name="sdt"]').value = '0983252568'
-  // ngay sinh
-  document.querySelector('input.bB[name="ns"]').value='02/09/1979';
-  //email
-  document.querySelector('input.bB.hT[name="ht"]').value = 'nhungtt.vic@gmail.com'
-  // ngay cap
-  document.querySelector('input.bB.cN[name="nc"]').value = '04/12/2021';
