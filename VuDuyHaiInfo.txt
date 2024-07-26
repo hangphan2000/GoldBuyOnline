@@ -1,3 +1,37 @@
+--------------Trịnh Tiến Quân
+let person = {
+  fullName: 'trịnh tiến quân',
+  idNumber: '035092013752',
+  issuePlace: 'cục cảnh sát qlhc về ttxh',
+  issueDate: '25/08/2021',
+  address: 'Lương Khánh Thiện, Phủ Lý, hà nam',
+  phone: '0962130922',
+  birthday: '28/10/1992',
+  email: 'trinhquanhn1992@gmail.com',
+  vietinSexIndex: 2,
+  vietinLoaiCC: 1,
+  vietinNoiGiaoDich: 1,
+  bidvAccNum: 4821813240, //tài khoản bid
+  bidvAmount: 1,
+}
+
+--------------Vũ Duy Hải
+let person = {
+  fullName: 'Vũ Duy Hải',
+  idNumber: '035063010610',
+  issuePlace: 'cục cảnh sát qlhc về ttxh',
+  issueDate: '25/08/2021',
+  address: 'Lương Khánh Thiện, Phủ Lý, hà nam',
+  phone: '0962130922',
+  birthday: '16/03/1963',
+  email: 'Vu.duyhai63@proton.me',//Vuduyhai63@
+  vietinSexIndex: 2, //2 nam 1 nu
+  vietinLoaiCC: 1,
+  vietinNoiGiaoDich: 1,
+  bidvAccNum: 4821813240, //tài khoản bid
+  bidvAmount: 1,
+}
+
 --------------Vũ Duy Hải
 Vũ Duy Hải
 16/03/1963
