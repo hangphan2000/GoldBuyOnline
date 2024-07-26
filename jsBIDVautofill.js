@@ -36,7 +36,7 @@ e= document.getElementById("idnumber"); e.value = person.idNumber; triggerEvent(
 e= document.getElementById("fullname"); e.value = person.fullName; triggerEvent(e, 'input'); //full name
 e= document.getElementById("issuedate"); e.value = person.issueDate; triggerEvent(e, 'input'); //ngay cap issuedate
 e= document.getElementById("birthday"); e.value = person.birthday; triggerEvent(e, 'input'); //birthday
-},100)
+},10)
 
 setTimeout(function(){
 document.getElementById('btnYes').click(); //click dong y co tai khoan
@@ -46,7 +46,7 @@ e= document.getElementById("purpose"); e.selectedIndex = person.bidvPurpose; tri
 e= document.getElementById("issueplace"); e.selectedIndex = person.bidvIssuePlace; triggerEvent(e, 'change'); //issueplace
 e= document.getElementById("terms"); e.checked = true; triggerEvent(e, 'input'); // checkbox
 window.scrollTo(0, document.body.scrollHeight);// Cuộn xuống cuối trang
-},100)
+},10)
 
 //-------------------------------------Phần 2 chua dung duoc
 var timer = setInterval(function() {
