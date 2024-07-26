@@ -34,7 +34,7 @@ setTimeout(function() {
   document.querySelector('input.bB[name="mxn"]').focus(); // focus vao o viet capcha
   window.scrollTo(0, document.body.scrollHeight);  // Cuộn xuống cuối trang
   console.log('fill info scueess');
-},100);
+},10);
 
 //enable button dang ky
 let button;
