@@ -1,41 +1,45 @@
 //sửa thông tin ở đây
+let person = {
+  fullName: 'trịnh tiến quân',
+  idNumber: '035092013752',
+  issuePlace: 'cục cảnh sát qlhc về ttxh',
+  issueDate: '25/08/2021',
+  address: 'Lương Khánh Thiện, Phủ Lý, hà nam',
+  phone: '0962130922',
+  birthday: '28/10/1992',
+  email: 'trinhquanhn1992@gmail.com',
+  vietinSexIndex: 2,
+  vietinLoaiCC: 1,
+  vietinNoiGiaoDich: 1,
+}
 setTimeout(function() {
-  console.log('fill input');
-  //ho ten
-  document.querySelector('input.bB[name="hvt"]').value = 'trịnh tiến quân'
-  //id number
-  document.querySelector('input.bB[name="s"]').value = '035092013752'
-  //noi cap
-  document.querySelector('input.bB[name="dcc"]').value = 'cục cảnh sát qlhc về ttxh'
-  //adress
-  document.querySelector('input.bB[name="dctt"]').value = 'Lương Khánh Thiện, Phủ Lý, hà nam'
-  //phone
-  document.querySelector('input.bB[name="sdt"]').value = '0962130922'
-  // ngay sinh
-  document.querySelector('input.bB[name="ns"]').value='28-10-1992';
-  //email
-  document.querySelector('input.bB.hT[name="ht"]').value = 'trinhquanhn1992@gmail.com'
-  // ngay cap
-  document.querySelector('input.bB.cN[name="nc"]').value = '25-08-2021';
-  // chon loai can cuoc
-  document.querySelector('select[name="l"]').selectedIndex = 1;
-  // chon gt
-  document.querySelector('select[name="gt"]').selectedIndex = 2;
-  // chon noi gd
-  document.querySelector('select[name="dc"]').selectedIndex = 1;
-  // focus vao o viet capcha
-  document.querySelector('input.bB[name="mxn"]').focus();
-  // Cuộn xuống cuối trang
-  window.scrollTo(0, document.body.scrollHeight);  
+  document.querySelector('input.bB[name="hvt"]').value = person.fullName //ho ten
+  document.querySelector('input.bB[name="s"]').value = person.idNumber //id number
+  document.querySelector('input.bB[name="dcc"]').value = person.issuePlace //noi cap
+  document.querySelector('input.bB[name="dctt"]').value = person.address //address
+  document.querySelector('input.bB[name="sdt"]').value = person.phone  //phone
+  document.querySelector('input.bB[name="ns"]').value= person.birthday; // ngay sinh
+  document.querySelector('input.bB.hT[name="ht"]').value = person.email //email
+  document.querySelector('input.bB.cN[name="nc"]').value = person.issueDate; // ngay cap
+  document.querySelector('select[name="l"]').selectedIndex = person.vietinLoaiCC; // chon loai can cuoc
+  document.querySelector('select[name="gt"]').selectedIndex = person.vietinSexIndex; // chon gt
+  document.querySelector('select[name="dc"]').selectedIndex = person.vietinNoiGiaoDich; // chon noi gd
+  document.querySelector('input.bB[name="mxn"]').focus(); // focus vao o viet capcha
+  window.scrollTo(0, document.body.scrollHeight);  // Cuộn xuống cuối trang
 },100);
 //enable button dang ky
+let button;
+let mxn;
+let thongBao;
+let inputEmailCode;
+let now;
 var timer = setInterval(function() {
-    let now = new Date();
+    now = new Date();
     console.log('clicking find email');
-  var button = document.querySelector('.pa-btn.gh'); // Nút xác nhận xac nhap trang 1
-  var mxn = document.querySelector('input.bB[name="mxn"]'); // Trường nhập captcha
-  var thongBao = document.querySelector('.tB').innerText;//thong bao
-   var inputEmailCode = document.querySelector('input[name="dh"]'); // Trường nhập mã email
+  button = document.querySelector('.pa-btn.gh'); // Nút xác nhận xac nhap trang 1
+  mxn = document.querySelector('input.bB[name="mxn"]'); // Trường nhập captcha
+  thongBao = document.querySelector('.tB').innerText;//thong bao
+   inputEmailCode = document.querySelector('input[name="dh"]'); // Trường nhập mã email
     if(now.getHours()===11){
       if (mxn.value.length === 5) {
             if (button.disabled) {
@@ -49,13 +53,13 @@ var timer = setInterval(function() {
         clearInterval(timer);
         var timer1 = setInterval(function() {
             console.log('clicking to death');
-            var button2 = document.querySelector('.pa-btn.dh'); // Nút xác nhận trang 2
-            var inputEmailCode = document.querySelector('input[name="dh"]'); // Trường nhập mã email
+            button = document.querySelector('.pa-btn.dh'); // Nút xác nhận trang 2
+            inputEmailCode = document.querySelector('input[name="dh"]'); // Trường nhập mã email
             if(inputEmailCode.value.length>0){
-              if (button2.disabled) {
-              button2.disabled = false;
+              if (button.disabled) {
+              button.disabled = false;
             }
-            button2.click();
+            button.click();
             }
         },1);
         }
