@@ -158,7 +158,26 @@ let person = {
   bidvPurpose: 2,
   bidvIssuePlace: 0,
 }
-
+--------------Giang huyền chang
+let person = {
+  fullName: 'Giang huyền chang',
+  idNumber: '034190013713',
+  issuePlace: 'cục cảnh sát qlhc về ttxh',
+  issueDate: '19/04/2021',
+  address: 'tổ 11 yên hòa cầu giấy hà nội',
+  phone: '0936577717',
+  birthday: '27/11/1990',
+  email: 'giang.huyenchang90@proton.me', //Gianghuyenchang90
+  vietinSexIndex: 1, //2 nam 1 nu
+  vietinLoaiCC: 1,
+  vietinNoiGiaoDich: 1,
+  bidvAccNum: 8832713711, //tài khoản bid
+  bidvAmount: 1,
+  bidvBranch: 1, //dia điểm giao dịch
+  bidvCapital: 1,
+  bidvPurpose: 2,
+  bidvIssuePlace: 0,
+}
 --------------Nguyễn Thị Nga
 Nguyễn Thị Nga
 16/11/1979
