@@ -13,16 +13,19 @@ let person = {
   vietinNoiGiaoDich: 1,
   bidvAccNum: 4821813240, //tài khoản bid
   bidvAmount: 1,
+  bidvBranch: 1, //dia điểm giao dịch
+  bidvCapital: 1,
+  bidvPurpose: 2,
+  bidvIssuePlace: 0,
 }
-
 --------------Vũ Duy Hải
 let person = {
   fullName: 'Vũ Duy Hải',
   idNumber: '035063010610',
   issuePlace: 'cục cảnh sát qlhc về ttxh',
-  issueDate: '25/08/2021',
-  address: 'Lương Khánh Thiện, Phủ Lý, hà nam',
-  phone: '0962130922',
+  issueDate: '19/11/2021',
+  address: 'Tổ 8 Minh Khai, Phủ Lý, hà nam',
+  phone: '0972996973',
   birthday: '16/03/1963',
   email: 'Vu.duyhai63@proton.me',//Vuduyhai63@
   vietinSexIndex: 2, //2 nam 1 nu
@@ -30,75 +33,131 @@ let person = {
   vietinNoiGiaoDich: 1,
   bidvAccNum: 4821813240, //tài khoản bid
   bidvAmount: 1,
+  bidvBranch: 1, //dia điểm giao dịch
+  bidvCapital: 1,
+  bidvPurpose: 2,
+  bidvIssuePlace: 0,
 }
-
---------------Vũ Duy Hải
-Vũ Duy Hải
-16/03/1963
-Vu.duyhai63@proton.me //Vuduyhai63@
-0972996973
-035063010610
-19/11/2021
-Tổ 8 Minh Khai, Phủ Lý, hà nam
-
 --------------Mai Văn Tùng
-Mai Văn Tùng
-30/01/2003
-mai.vantung03@proton.me //Hathituc70@
-0949355950
-bidv:4823373892
-035203003891
-31/12/2021
-đồng tân, tân sơn, kim bảng, hà nam
-
---------------Trần Văn Kỳ //done
-Trần Văn Kỳ
-12/08/1972
-tran.vanky72hn@gmail.com //Tranvanky72@
-0915889739
-035072008376
-19/11/2021
-Lê Lợi, Châu sơn, Phủ Lý, Hà Nam
-
+let person = {
+  fullName: 'Mai Văn Tùng',
+  idNumber: '035203003891',
+  issuePlace: 'cục cảnh sát qlhc về ttxh',
+  issueDate: '31/12/2021',
+  address: 'đồng tân, tân sơn, kim bảng, hà nam',
+  phone: '0949355950',
+  birthday: '30/01/2003',
+  email: 'mai.vantung03@proton.me',//Maivantung03@
+  vietinSexIndex: 2, //2 nam 1 nu
+  vietinLoaiCC: 1,
+  vietinNoiGiaoDich: 1,
+  bidvAccNum: 4823373892, //tài khoản bid
+  bidvAmount: 1,
+  bidvBranch: 1, //dia điểm giao dịch
+  bidvCapital: 1,
+  bidvPurpose: 2,
+  bidvIssuePlace: 0,
+}
+--------------Trần Văn Kỳ
+let person = {
+  fullName: 'Trần Văn Kỳ',
+  idNumber: '035072008376',
+  issuePlace: 'cục cảnh sát qlhc về ttxh',
+  issueDate: '19/11/2021',
+  address: 'Lê Lợi, Châu sơn, Phủ Lý, Hà Nam',
+  phone: '0915889739',
+  birthday: '12/08/1972',
+  email: 'tran.vanky72hn@gmail.com',//Tranvanky72@
+  vietinSexIndex: 2, //2 nam 1 nu
+  vietinLoaiCC: 1,
+  vietinNoiGiaoDich: 1,
+  bidvAccNum: 4823373892, //tài khoản bid
+  bidvAmount: 1,
+  bidvBranch: 1, //dia điểm giao dịch
+  bidvCapital: 1,
+  bidvPurpose: 2,
+  bidvIssuePlace: 0,
+}
 --------------Tô thị trang nhung
-Tô thị trang nhung
-02/09/1979
-nhungtt.vic@gmail.com //cuongnhung2002
-0983252568
-bidv:8832651486
-001179034852
-04/12/2021
-368-C7 tân mai, hoàng mai, hà nội
-
+let person = {
+  fullName: 'Tô thị trang nhung',
+  idNumber: '001179034852',
+  issuePlace: 'cục cảnh sát qlhc về ttxh',
+  issueDate: '04/12/2021',
+  address: '368-C7 tân mai, hoàng mai, hà nội',
+  phone: '0983252568',
+  birthday: '02/09/1979',
+  email: 'nhungtt.vic@gmail.com', //cuongnhung2002
+  vietinSexIndex: 1, //2 nam 1 nu
+  vietinLoaiCC: 1,
+  vietinNoiGiaoDich: 1,
+  bidvAccNum: 8832651486, //tài khoản bid
+  bidvAmount: 1,
+  bidvBranch: 1, //dia điểm giao dịch
+  bidvCapital: 1,
+  bidvPurpose: 2,
+  bidvIssuePlace: 0,
+}
 --------------Mai văn cường
-Mai văn cường
-20/12/1975
-cuongmv.bdsviettel@gmail.com // cuongmv0965711999
-0965711999
-bidv:8832713711
-035075000001
-10/07/2021
-368-C7 tân mai, hoàng mai, hà nội
-
---------------Nguyễn Hữu Giang //done
-Nguyễn Hữu Giang
-24/11/1994
-nguyen.huugiang94@proton.me //Nguyenhuugiang94@
-0582255999
-bidv:8832851495
-001094012240
-08/12/2021
-Phong Triều, nam Triều, Phú xuyên, Hà nội
-
+let person = {
+  fullName: 'Mai văn cường',
+  idNumber: '035075000001',
+  issuePlace: 'cục cảnh sát qlhc về ttxh',
+  issueDate: '10/07/2021',
+  address: '368-C7 tân mai, hoàng mai, hà nội',
+  phone: '0965711999',
+  birthday: '20/12/1975',
+  email: 'cuongmv.bdsviettel@gmail.com', //cuongmv0965711999
+  vietinSexIndex: 2, //2 nam 1 nu
+  vietinLoaiCC: 1,
+  vietinNoiGiaoDich: 1,
+  bidvAccNum: 8832713711, //tài khoản bid
+  bidvAmount: 1,
+  bidvBranch: 1, //dia điểm giao dịch
+  bidvCapital: 1,
+  bidvPurpose: 2,
+  bidvIssuePlace: 0,
+}
+--------------Nguyễn Hữu Giang
+let person = {
+  fullName: 'Nguyễn Hữu Giang',
+  idNumber: '001094012240',
+  issuePlace: 'cục cảnh sát qlhc về ttxh',
+  issueDate: '08/12/2021',
+  address: 'Phong Triều, nam Triều, Phú xuyên, Hà nội',
+  phone: '0582255999',
+  birthday: '24/11/1994',
+  email: 'nguyen.huugiang94@proton.me', //Nguyenhuugiang94@
+  vietinSexIndex: 2, //2 nam 1 nu
+  vietinLoaiCC: 1,
+  vietinNoiGiaoDich: 1,
+  bidvAccNum: 8832851495, //tài khoản bid
+  bidvAmount: 1,
+  bidvBranch: 1, //dia điểm giao dịch
+  bidvCapital: 1,
+  bidvPurpose: 2,
+  bidvIssuePlace: 0,
+}
 --------------Nguyễn Quang Huy
-Nguyễn Quang Huy
-24/1/1996
-nguyen.quanghuy96@proton.me //Nguyenquanghuy96@
-0969609494
-bidv:8802851100
-001096023632
-08/12/2021
-Phong Triều, nam Triều, Phú xuyên, Hà nội
+let person = {
+  fullName: 'Nguyễn Quang Huy',
+  idNumber: '001096023632',
+  issuePlace: 'cục cảnh sát qlhc về ttxh',
+  issueDate: '08/12/2021',
+  address: 'Phong Triều, nam Triều, Phú xuyên, Hà nội',
+  phone: '0969609494',
+  birthday: '24/1/1996',
+  email: 'nguyen.quanghuy96@proton.me', //Nguyenquanghuy96@
+  vietinSexIndex: 2, //2 nam 1 nu
+  vietinLoaiCC: 1,
+  vietinNoiGiaoDich: 1,
+  bidvAccNum: 8802851100, //tài khoản bid
+  bidvAmount: 1,
+  bidvBranch: 1, //dia điểm giao dịch
+  bidvCapital: 1,
+  bidvPurpose: 2,
+  bidvIssuePlace: 0,
+}
 
 --------------Nguyễn Thị Nga
 Nguyễn Thị Nga
