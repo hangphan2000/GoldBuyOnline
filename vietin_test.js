@@ -44,6 +44,14 @@ let inputEmailCode;
 let now;
 var timer = setInterval(function() {
   now = new Date();
+      const options = {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false // Use 24-hour format
+    };
+    console.log(now.toLocaleTimeString('en-US', options));
+  
   button = document.querySelector('.pa-btn.gh'); // Nút xác nhận xac nhap trang 1
   mxn = document.querySelector('input.bB[name="mxn"]'); // Trường nhập captcha
   thongBao = document.querySelector('.tB').innerText;//thong bao
