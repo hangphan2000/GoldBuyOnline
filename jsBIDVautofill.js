@@ -1,87 +1,50 @@
 //------------------------------------------------- phan 1
-//sửa thông tin ở đây
-const fullname = 'Mai Văn Tùng'
-const address2= 'đồng tân, tân sơn, kim bảng, hà nam'
-const address1= 'đồng tân, tân sơn, kim bảng, hà nam'
-const acctnum= '4823373892'
-const cellphone= '0949355950'
-const idnumber= '035203003891'
-const issuedate= '31/12/2021'
-const birthday= '30/01/2003'
-const amount= 1 // số lượng cây
+let person = {
+  fullName: 'trịnh tiến quân',
+  idNumber: '035092013752',
+  issuePlace: 'cục cảnh sát qlhc về ttxh',
+  issueDate: '25/08/2021',
+  address: 'Lương Khánh Thiện, Phủ Lý, hà nam',
+  phone: '0962130922',
+  birthday: '28/10/1992',
+  email: 'trinhquanhn1992@gmail.com',
+  vietinSexIndex: 2,
+  vietinLoaiCC: 1,
+  vietinNoiGiaoDich: 1,
+  bidvAccNum: 4821813240, //tài khoản bid
+  bidvAmount: 1,
+  bidvBranch: 1, //dia điểm giao dịch
+  bidvCapital: 1,
+  bidvPurpose: 2,
+  bidvIssuePlace: 0,
+}
 //------------
 function triggerEvent(el, type) {
     const event = new Event(type, { bubbles: true });
     el.dispatchEvent(event);
 }
+
+let e;
+
 setTimeout(function(){
-  console.log('run1');
-  //address2
-var branch= document.getElementById("address2");
-branch.value = address2;
-triggerEvent(branch, 'input');
-//address1
-var branch= document.getElementById("address1");
-branch.value = address1;
-triggerEvent(branch, 'input');
-//amount
-var branch= document.getElementById("amount");
-branch.value = amount;
-triggerEvent(branch, 'input');
-//acctnum
-var branch= document.getElementById("acctnum");
-branch.value = acctnum;
-triggerEvent(branch, 'input');
-//cellphone
-var branch= document.getElementById("cellphone");
-branch.value = cellphone;
-triggerEvent(branch, 'input');
-//idnumber
-var branch= document.getElementById("idnumber");
-branch.value = idnumber;
-triggerEvent(branch, 'input');
-//full name
-var branch= document.getElementById("fullname");
-branch.value = fullname;
-triggerEvent(branch, 'input');
-//ngay cap issuedate
-var branch= document.getElementById("issuedate");
-branch.value = issuedate;
-triggerEvent(branch, 'input');
-//birthday
-var branch= document.getElementById("birthday");
-branch.value = birthday;
-triggerEvent(branch, 'input');
-  
+e= document.getElementById("address2"); e.value = person.address; triggerEvent(e, 'input');  //address2
+e= document.getElementById("address1"); e.value = person.address; triggerEvent(e, 'input'); //address1
+e= document.getElementById("amount"); e.value = person.bidvAmount; triggerEvent(e, 'input');//amount
+e= document.getElementById("acctnum"); e.value = person.bidvAccNum; triggerEvent(e, 'input'); //acctnum
+e= document.getElementById("cellphone"); e.value = person.phone; triggerEvent(e, 'input'); //cellphone
+e= document.getElementById("idnumber"); e.value = person.idNumber; triggerEvent(e, 'input'); //idnumber
+e= document.getElementById("fullname"); e.value = person.fullName; triggerEvent(e, 'input'); //full name
+e= document.getElementById("issuedate"); e.value = person.issueDate; triggerEvent(e, 'input'); //ngay cap issuedate
+e= document.getElementById("birthday"); e.value = person.birthday; triggerEvent(e, 'input'); //birthday
 },100)
 
 setTimeout(function(){
-  console.log('run2');
-  //click dong y co tai khoan
-document.getElementById('btnYes').click();
-//branch dia diem giao dich
-var branch= document.getElementById("branch");
-branch.selectedIndex = 2;
-triggerEvent(branch, 'change');
-// capital
-var capital= document.getElementById("capital");
-capital.selectedIndex = 1;
-triggerEvent(capital, 'change');
-// purpose
-var purpose= document.getElementById("purpose");
-purpose.selectedIndex = 2;
-triggerEvent(purpose, 'change');
-//issueplace
-var dropdown = document.getElementById("issueplace");
-dropdown.selectedIndex = 0;
-triggerEvent(dropdown, 'change');
-//check dong y
-let customCheckbox = document.querySelector('.iCheck-helper').click();
-// checkbox
-var check = document.getElementById("terms");
-check.checked = true;
-triggerEvent(check, 'input');
-
+document.getElementById('btnYes').click(); //click dong y co tai khoan
+e= document.getElementById("branch"); e.selectedIndex = person.bidvBranch; triggerEvent(e, 'change'); //branch dia diem giao dich
+e= document.getElementById("capital"); e.selectedIndex = person.bidvCapital; triggerEvent(e, 'change'); //capital
+e= document.getElementById("purpose"); e.selectedIndex = person.bidvPurpose; triggerEvent(e, 'change'); //purpose
+e= document.getElementById("issueplace"); e.selectedIndex = person.bidvIssuePlace; triggerEvent(e, 'change'); //issueplace
+e= document.getElementById("terms"); e.checked = true; triggerEvent(e, 'input'); // checkbox
 window.scrollTo(0, document.body.scrollHeight);// Cuộn xuống cuối trang
 },100)
 
