@@ -18,6 +18,48 @@ let person = {
   bidvPurpose: 2,
   bidvIssuePlace: 0,
 }
+
+--------------Phan Cao Thế
+let person = {
+  fullName: 'Phan Cao Thế',
+  idNumber: '001091036739',
+  issuePlace: 'cục cảnh sát qlhc về ttxh',
+  issueDate: '09-04-2021',
+  address: 'Khương Mai, Thanh Xuân, Hà Nội',
+  phone: '0989575578',
+  birthday: '12-09-1991',
+  email: 'phanthe.catx@gmail.com',// Th3ph@n91
+  vietinSexIndex: 2,
+  vietinLoaiCC: 1,
+  vietinNoiGiaoDich: 1,
+  bidvAccNum: 4821813240, //tài khoản bid
+  bidvAmount: 1,
+  bidvBranch: 1, //dia điểm giao dịch
+  bidvCapital: 1,
+  bidvPurpose: 2,
+  bidvIssuePlace: 0,
+}
+
+--------------Hà Minh Anh
+let person = {
+  fullName: 'Hà Minh Anh',
+  idNumber: '037301005728',
+  issuePlace: 'cục cảnh sát qlhc về ttxh',
+  issueDate: '13-08-2021',
+  address: 'Tổ 4, Hai Bà Trưng, Phủ Lý, Hà Nam',
+  phone: '0912155638',
+  birthday: '11-04-2001',
+  email: 'ha.minhanh2001@proton.me',// haminhanh2001
+  vietinSexIndex: 1,
+  vietinLoaiCC: 1,
+  vietinNoiGiaoDich: 1,
+  bidvAccNum: 4821813240, //tài khoản bid
+  bidvAmount: 1,
+  bidvBranch: 1, //dia điểm giao dịch
+  bidvCapital: 1,
+  bidvPurpose: 2,
+  bidvIssuePlace: 0,
+}
 --------------Vũ Duy Hải
 let person = {
   fullName: 'Vũ Duy Hải',
@@ -158,16 +200,16 @@ let person = {
   bidvPurpose: 2,
   bidvIssuePlace: 0,
 }
---------------Giang huyền chang
+--------------Giang Huyền Chang
 let person = {
-  fullName: 'Giang huyền chang',
+  fullName: 'Giang Huyền Chang',
   idNumber: '034190013713',
   issuePlace: 'cục cảnh sát qlhc về ttxh',
-  issueDate: '19/04/2021',
+  issueDate: '19-04-2021',
   address: 'tổ 11 yên hòa cầu giấy hà nội',
   phone: '0936577717',
-  birthday: '27/11/1990',
-  email: 'giang.huyenchang90@proton.me', //Gianghuyenchang90
+  birthday: '27-11-1990',
+  email: 'huyenchang.dhhp@gmail.com', //chang8861@
   vietinSexIndex: 1, //2 nam 1 nu
   vietinLoaiCC: 1,
   vietinNoiGiaoDich: 1,
