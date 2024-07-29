@@ -40,6 +40,27 @@ let person = {
   bidvIssuePlace: 0,
 }
 
+--------------Đỗ Thị Non
+let person = {
+  fullName: 'Đỗ Thị Non',
+  idNumber: '034168003191',
+  issuePlace: 'cục cảnh sát qlhc về ttxh',
+  issueDate: '17-08-2022',
+  address: 'Mỹ Lộc, Thái Thụy, Thái Bình',
+  phone: '0333983977',
+  birthday: '12-03-1968',
+  email: 'thephancatx@gmail.com',// thephan91
+  vietinSexIndex: 1,
+  vietinLoaiCC: 1,
+  vietinNoiGiaoDich: 1,
+  bidvAccNum: 4821813240, //tài khoản bid
+  bidvAmount: 1,
+  bidvBranch: 1, //dia điểm giao dịch
+  bidvCapital: 1,
+  bidvPurpose: 2,
+  bidvIssuePlace: 0,
+}
+
 --------------Hà Minh Anh
 let person = {
   fullName: 'Hà Minh Anh',
